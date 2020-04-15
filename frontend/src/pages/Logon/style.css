@@ -1,0 +1,28 @@
+.logon-container {
+    background-image: url("../../assets/notepad.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logon-container .form {
+    margin: -35px 0 0 30%;
+    width: 100%;
+    max-width: 300px;
+}
+
+.logon-container .form form {
+    margin-top: 16px;
+}
+
+.logon-container .form form h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}

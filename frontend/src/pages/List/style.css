@@ -1,0 +1,115 @@
+.list-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 32px auto
+}
+
+.list-container header {
+    display: flex;
+    align-items: center;
+}
+
+.list-container header span {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.list-container header img {
+    height: 90px;
+}
+
+.list-container header a {
+    width: 240px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.list-container header button {
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #828071;
+    background: transparent;
+    margin-left: 10px;
+    transition: border-color 0.3s;
+}
+
+.list-container header button:hover {
+    border-color: #42413A;
+}
+
+.list-container h1 {
+    margin: 80px 0 24px 0;
+    font-size: 24px;
+}
+
+.list-container ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.list-container ul li div div div h5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-container ul li div div div h5 button {
+    color: rgb(133, 131, 124);
+    font-size: 18px;
+}
+
+.list-container ul li div div div h5 .erase {
+    border: 0;
+    background: transparent;
+    text-decoration: none;
+}
+
+.group-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adquired {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adquired .icon {
+    margin-right: 18px;
+}
+
+.group-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.group-icons .group-left {
+    margin-left: 18px;
+}
+
+.group-icons .edit-icons {
+    border: 0;
+    background: transparent;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.group-icons .group-left .edit-icons svg {
+    margin-right: 5px;
+}
+
+.group-icons .group-right {
+    margin-right: 38px;
+}
+
+.group-icons .group-right .edit-icons svg {
+    margin-left: 5px;
+}

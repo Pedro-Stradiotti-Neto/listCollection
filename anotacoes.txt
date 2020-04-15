@@ -1,0 +1,7 @@
+Definicões do Projeto
+
+Página Inicial
+- Login
+	Email, ID
+- Cadastro
+	Nome, Email, Sexo
