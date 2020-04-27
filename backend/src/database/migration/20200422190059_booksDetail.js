@@ -1,11 +1,10 @@
 
 exports.up = function (knex) {
-    return knex.schema.createTable('books', function (table) {
+    return knex.schema.createTable('booksDetail', function (table) {
         table.increments();
-        table.string('tipo').notNullable;
         table.string('titulo').notNullable;
-        table.string('distribuidora').notNullable;
-        table.string('status').notNullable;
+        table.string('volumes').notNullable;
+        table.string('possui').notNullable;
 
         table.string('users_id').notNullable;
 
@@ -13,6 +12,7 @@ exports.up = function (knex) {
     });
 };
 
+
 exports.down = function (knex) {
-    return knex.schema.dropTable('books');
+    return knex.schema.dropTable('booksDetail');
 };

@@ -2,7 +2,7 @@ const express = require('express');
 const UserController = require('./controllers/UsersController');
 const BooksController = require('./controllers/BooksController');
 const SessionController = require('./controllers/SessionController');
-
+const BDetailController = require('./controllers/BDetailController');
 const routes = express.Router();
 
 //Rota Login
@@ -30,5 +30,12 @@ routes.post('/books', BooksController.create);
 
 //Rota Apagar Obra
 routes.delete('/books/:id', BooksController.delete);
+
+//Rota Listagem Obras Específicas
+routes.get('/booksDetail', BDetailController.index);
+
+//Rota Cadastrar Novo Volume
+
+//Rota Apagar Volume
 
 module.exports = routes;
