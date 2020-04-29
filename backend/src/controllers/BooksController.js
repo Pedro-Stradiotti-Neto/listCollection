@@ -4,7 +4,11 @@ const connection = require('../database/connection');
 module.exports = {
     async index(req, res) {
         const users_id = req.headers.authorization;
-        const book = await connection('books').select('*').where('users_id', users_id);
+        const status = req.headers.type;
+        const book = await connection('books').select('*').where({
+            'users_id': users_id,
+            'status': status
+        });
 
         return res.json(book);
     },

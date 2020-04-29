@@ -6,8 +6,6 @@ module.exports = {
         const users_id = req.headers.authorization;
         const bookName = req.headers.bookname;
 
-        console.log(users_id, bookName);
-
         const book = await connection('booksDetail').select('*').where({
             'titulo': bookName,
             'users_id': users_id

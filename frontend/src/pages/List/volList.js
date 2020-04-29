@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FiCheck } from 'react-icons/fi'
 
 import api from '../../services/api';
 
 import './style.css';
 
-import { useState } from 'react';
-
-export default function Aux(props) {
+export default function VolList(props) {
     const userId = localStorage.getItem('userId');
     const [bookDetail, setBookDetail] = useState([]);
 
